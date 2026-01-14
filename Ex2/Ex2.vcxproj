@@ -130,8 +130,8 @@
     <ClCompile Include="Animal.cpp" />
     <ClCompile Include="Cao.cpp" />
     <ClCompile Include="Clinica.cpp" />
-    <ClCompile Include="Ex2.cpp" />
     <ClCompile Include="Gato.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />

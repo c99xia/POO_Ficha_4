@@ -7,6 +7,17 @@ Gato::Gato(std::string nomeAnimalP, std::string dataNascimentoAnimalP, double pe
 }
 
 std::string Gato::exercitar() {
+	std::ostringstream oss;
+	
+	double pesoAtual = getPeso();
+	double novoPeso = pesoAtual * 0.9;
+	if (novoPeso >= 2.5) {
+		setPeso(novoPeso);
+		oss << "Derrubei N jarras e arranhei M pessoas" << "\n";
+		return oss.str();
+	}
+	oss << "Abaixo de peso" << "\n";
+	return oss.str();
 
 }
 
@@ -16,7 +27,7 @@ std::string Gato::comer() {
 	return oss.str();
 }
 
-std::string Gato::getDescricao() {
+std::string Gato::getDescricao() const {
 	std::ostringstream oss;
 	oss << "Nome: " << getNome()
 		<< "Data de Nascimento: " << getDataNascimento()
@@ -25,3 +36,4 @@ std::string Gato::getDescricao() {
 
 	return oss.str();
 }
+

@@ -12,6 +12,6 @@ public:
 
 	std::string exercitar() override;
 	std::string comer() override;
-	std::string getDescricao() override;
+	std::string getDescricao() const override;
 };
 

@@ -25,14 +25,12 @@ std::string Cao::comer() {
 		oss << "Biscoitos bons. Obrigado" << "\n";
 		return oss.str();
 	}
-	else {
-		oss << "Sobrepeso" << "\n";
-		return oss.str();
-	}
+	oss << "Sobrepeso" << "\n";
+	return oss.str();
 
 }
 
-std::string Cao::getDescricao() {
+std::string Cao::getDescricao() const {
 	std::ostringstream oss;
 	oss << "Nome: " << getNome()
 		<< "Data de Nascimento: " << getDataNascimento()

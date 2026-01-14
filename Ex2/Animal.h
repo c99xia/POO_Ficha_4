@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <stdexcept>
+#include <iostream>
 
 class Animal
 {
@@ -34,7 +35,7 @@ public:
 	//Virtual Puro
 	virtual std::string comer() = 0;
 	virtual std::string exercitar() = 0;
-	virtual std::string getDescricao() = 0;
+	virtual std::string getDescricao() const = 0;
 
 	//Destrutor virtual
 	virtual ~Animal();
