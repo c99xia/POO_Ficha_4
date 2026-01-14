@@ -7,4 +7,5 @@
     <File Path="Ficha4.md" />
   </Folder>
   <Project Path="Ex1/Ex1.vcxproj" Id="be28c988-e5f0-4e05-acd0-10c21ad4a6be" />
+  <Project Path="Ex2/Ex2.vcxproj" Id="e7e584c9-1111-4ee1-825a-37bf3a5b95d3" />
 </Solution>
